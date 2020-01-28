@@ -8,7 +8,8 @@ class MP3Importer
     binding.pry 
   end 
   
-  def files 
+  def files
+    puts Dir.entries(path)
     
   end 
   
