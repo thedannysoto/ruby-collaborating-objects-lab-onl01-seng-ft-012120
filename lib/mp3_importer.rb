@@ -3,7 +3,7 @@ class MP3Importer
   
   attr_accessor :path 
   
-  @files = []
+  @@files = []
   
   def initialize(path)
     @path = path
@@ -11,11 +11,11 @@ class MP3Importer
   end 
   
   def files
-    @files = Dir.children(path)
+    @@files = Dir.children(path)
   end 
   
   def import
-    @files.each do |file|
+    @@files.each do |file|
       Song.new_by_filename(file)
     end 
   end 
