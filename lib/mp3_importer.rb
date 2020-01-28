@@ -9,15 +9,16 @@ class MP3Importer
   end 
   
   def files
-    files = Dir.children(path)
-    files.each do |file|
-      Song.new_by_filename(file)
+    @files = Dir.children(path)
+    
     end
     
   end 
   
   def import
-    
+    @files.each do |file|
+      Song.new_by_filename(file)
+    end 
   end 
   
   
