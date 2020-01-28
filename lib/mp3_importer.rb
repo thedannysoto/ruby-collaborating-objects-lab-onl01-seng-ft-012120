@@ -5,11 +5,13 @@ class MP3Importer
   
   def initialize(path)
     @path = path
-   # binding.pry 
+    
   end 
   
   def files
     files = Dir.children(path)
+    files.each do |file|
+      Song.
     
   end 
   
