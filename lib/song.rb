@@ -19,6 +19,7 @@ class Song
     artist = file.split(" - ")[0]
     song = Song.new(name)
     @instance = Artist.new(artist)
+    song.name = @instance
     @instance.add_song(name)
     
     song
