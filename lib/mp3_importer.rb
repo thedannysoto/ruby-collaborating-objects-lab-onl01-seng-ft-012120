@@ -9,7 +9,7 @@ class MP3Importer
   end 
   
   def files
-    puts Dir.children(path)
+    print Dir.children(path)
     
   end 
   
