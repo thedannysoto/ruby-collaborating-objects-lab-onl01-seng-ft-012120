@@ -18,9 +18,12 @@ class Song
     name = file.split(" - ")[1]
     artist = file.split(" - ")[0]
     song = Song.new(name)
-    @instance = Artist.new(artist)
-    song.artist = @instance
-    @instance.add_song(name)
+    song.artist = Artist.new(artist)
+    song.artist.add_song(name)
+  
+  #  @instance = Artist.new(artist)
+  #  song.artist = @instance
+   # @instance.add_song(name)
     
     song
   end 
