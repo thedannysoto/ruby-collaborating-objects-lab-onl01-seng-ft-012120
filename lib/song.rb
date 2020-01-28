@@ -20,11 +20,6 @@ class Song
     song = Song.new(name)
     song.artist = Artist.new(artist)
     song.artist.add_song(name)
-  
-  #  @instance = Artist.new(artist)
-  #  song.artist = @instance
-   # @instance.add_song(name)
-    
     song
   end 
   
