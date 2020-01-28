@@ -19,8 +19,8 @@ class Song
     artist = file.split(" - ")[0]
     song = Song.new(name)
     @instance = Artist.new(artist)
-    @instance.
-    binding.pry 
+    @instance.add_song(name)
+    
     song
   end 
   
